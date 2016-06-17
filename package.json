@@ -15,7 +15,7 @@
     "ghlabelcp": "./dist/index.js"
   },
   "author": "Eric Taylor <eric@daxos.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "homepage": "https://github.com/Psiablo/github-label-copy",
   "repository": "Psiablo/github-label-copy",
   "bugs": {
