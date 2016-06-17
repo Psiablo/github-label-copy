@@ -1,7 +1,7 @@
 {
   "name": "github-label-copy",
   "version": "0.0.1",
-  "description": "A command-line tool for copying Github Issues labels to another repo.",
+  "description": "A command-line tool for copying Github Issues labels from one repo to another.",
   "main": "./dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
@@ -14,6 +14,11 @@
   },
   "author": "Eric Taylor <eric@daxos.com>",
   "license": "UNLICENSED",
+  "homepage": "https://github.com/Psiablo/github-label-copy",
+  "repository": "Psiablo/github-label-copy",
+  "bugs": {
+    "url": "https://github.com/Psiablo/github-label-copy/issues"
+  },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-core": "^6.9.1",
