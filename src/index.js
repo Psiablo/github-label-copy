@@ -32,7 +32,6 @@ program
   .option('-u, --username <username>', 'The user to authenticate as')
   .option('-p, --password <password>', 'The user\'s password')
   .option('-t, --token <token>', 'The user\'s authentication OAuth token')
-  .option('-d, --delete', 'Delete the target repos labels. Replaced by source repos labels')
   .action( (sourceRepo, targetRepo) => {
 
     // Check the args are valid format
