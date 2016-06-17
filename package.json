@@ -2,9 +2,15 @@
   "name": "github-label-copy",
   "version": "0.0.1",
   "description": "A command-line tool for copying Github Issues labels to another repo.",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir dist",
+    "lint": "eslint ./src",
+    "test": "npm run lint",
+    "preversion": "npm test"
+  },
+  "bin": {
+    "ghlabelcp": "./dist/index.js"
   },
   "author": "Eric Taylor <eric@daxos.com>",
   "license": "UNLICENSED",
@@ -15,5 +21,9 @@
     "babel-preset-es2015": "^6.9.0",
     "eslint": "^2.12.0",
     "eslint-plugin-import": "^1.8.1"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "request-json": "^0.5.6"
   }
 }
